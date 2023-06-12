@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import CountingNumbers from "@/components/shared/counting-numbers";
+import CountingNumbers from "@/components/shared/counting-numbers2";
 
 export default function WebVitals() {
   return (
@@ -12,7 +12,7 @@ export default function WebVitals() {
         width={140}
         height={140}
       >
-        <motion.circle
+        <motion.animate
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           whileInView={{ pathLength: 1 }}
@@ -30,9 +30,9 @@ export default function WebVitals() {
         />
       </motion.svg>
       <CountingNumbers
-        value={100}
+        value={5001}
         duration={3000}
-        className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-green-500"
+        className="absolute inset-0 mx-auto flex items-center justify-center font-display text-5xl text-blue-600/100"
       />
     </div>
   );
